@@ -1,0 +1,23 @@
+{
+    "type": "metapackage",
+    "name": "helhum/typo3-env-enabled-patch",
+    "require": {
+        "netresearch/composer-patches-plugin": "^1.2"
+    },
+    "extra": {
+        "patches": {
+            "typo3/cms": {
+                "6.2.*": [
+                    {
+                        "title": "Dot Env enable patch",
+                        "url": "https://github.com/helhum/TYPO3.CMS/commit/75a805560c6ceb7fade4c04304bbce02007d2c77.diff"
+                    },
+                    {
+                        "title": "Package Manager - Package States patch",
+                        "url": "https://github.com/helhum/TYPO3.CMS/commit/acd76c1c7a7c80a6023f6180960a0f5005bec976.diff"
+                    }
+                ]
+            }
+        }
+    }
+}
